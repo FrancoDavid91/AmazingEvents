@@ -1,0 +1,282 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    /*border: 1px solid black;*/
+}
+:root{
+    --color1: #ff5378;
+    --color2: #ff9c4d;
+    --color3: #ffe961;
+    --color4: #fffbaa;
+    --color5: #f8fcf3;
+}
+/* ---------- HOME ---------- */
+/* navbar */
+.navbar{
+    background-color: #cbcec7;
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-item{
+    display: flex;
+    justify-content: center;
+    margin: 5px 5px 0 5px;
+    align-items: center;
+    text-align: center;
+    width: 120px;
+    background-color: var(--color4);
+    font-size: 17px;
+    font-weight: bold;
+}
+/* slider */
+.container-fluid.slider{
+    background-image: url(./aseets/fondo_carrusel.png);
+    height: 30%;
+}
+.slider-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-slider{
+    font-family: 'Satisfy', sans-serif;
+    font-size: 4rem;
+    color: var(--color5);
+    text-align: center;
+}
+.arrow{
+    width: 60px;
+    height: 45px;
+    margin: 0 120px;
+}
+/* checkbox & search */
+.category-checkbox{
+    display:inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.search{
+    display: inline-flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+.category-search{
+    width: 100%;
+    margin-top: 35px;
+}
+/* cards */
+.card{
+    height: 60%;
+    border: 2px solid var(--color1);
+    border-radius: 0; 
+    display: flex;
+    justify-content: space-around;
+}
+.card-img{
+    width: 230px;
+    height: 400px;
+    background-size: cover;
+    margin: 10px;
+    box-shadow: -6px -3px 5px 0px rgba(0,0,0,0.75);
+}
+.card-img.one{
+    background-image: url(./aseets/Museum_Tour.jpg);
+}
+.card-img.two{
+    background-image: url(./aseets/Cinema.jpg);
+}
+.card-img.three{
+    background-image: url(./aseets/Food_Fair.jpg);
+}
+.card-img.four{
+    background-image: url(./aseets/Costume_Party.jpg);
+}
+.price-text{
+    font-size: 12px;
+    margin-top: 20px;
+}
+.card-text{
+    font-size: 16px;
+}
+.btn.btn-primary{
+    border-radius: 0;
+    background-color: var(--color2);
+    border-color: var(--color1);
+    color: black;
+    font-weight: bold;
+    box-shadow: -10px -8px 4px 2px rgba(0,0,0,0.75);
+}
+.row-footercard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* footer */
+.container-fluid.footer{
+    background-color: var(--color3);
+    border-top: 1px solid var(--color4);
+}
+.img-footer{
+    height: 50px;
+    margin: 10px;
+}
+.text-footer{
+    text-align: end;
+    font-size: 35px;
+    margin: 5px;
+}
+/* ---------- CONTACT ---------- */
+.form-contact{
+    margin: 40px 0;
+}
+.btn.btn-primary.form{
+    box-shadow: none;
+    position: relative;
+    left: 80%;
+}
+/* ----------  STATS ---------- */
+table{
+    margin: 10px 0;
+    font-size: 13px;
+    background-color: #e2e6dd;
+}
+tr,td{
+    border: 1px solid black;
+    padding: 5px;
+}
+.head-table{
+    background-color: var(--color2);
+    font-size: 20px;
+    padding: 5px;
+}
+/* ----- EVENT - CARD EXPANSION ----- */
+/* ------------ event -------------- */
+.card-expand{
+    height: 500px;
+    width: 70%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 2px solid var(--color1);
+}
+.img-expand{
+    box-shadow: -6px -3px 5px 0px rgba(0,0,0,0.75);
+    background-size: cover;
+    height: 80%;
+    width: 40%;
+}
+.event1{
+    background-image: url(./aseets/Museum_Tour.jpg);
+    background-position: -80px;
+}
+.event2{
+    background-image: url(./aseets/Cinema.jpg);
+    background-position: -100px;
+}
+.event3{
+    background-image: url(./aseets/Food_Fair.jpg);
+}
+.event4{
+    background-image: url(./aseets/Costume_Party.jpg);
+    background-position: -80px;
+}
+.text-expand{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 80%;
+    width: 40%;
+    background-color: var(--color2);
+}
+.text-expand p{
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    
+}
+/*---------- mediaQuery ----------*/
+/* ----------  ---------- */
+@media only screen and (max-width:991px){
+    .navbar-collapse{
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .arrow{
+        width: 50px;
+        height: 45px;
+        margin: 0 50px;
+    }
+    .category-checkbox{
+        display: inline;
+        width: 100%;
+        text-align: center;
+    }
+    .search{
+        display: inline-block;
+        width: 100%;
+    }
+    .card-expand{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background-size:contain;
+    }
+    .text-expand{
+        display: inline-flex;
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+    }
+}
+@media only screen and (max-width:767px){
+    .container-fluid.slider{
+        display:inline-flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .arrow{
+        width: 100%;
+        margin: 0 5px;
+    }
+    .nav-item{
+        width: 100%;
+    }
+    .row.footer{
+        display: block;
+        text-align: center;
+    }
+    .text-footer{
+        text-align: center;
+        font-size: 30px;
+        margin: 3px;
+    }
+    .btn.btn-primary.form{
+        position: relative;
+        left: 70%;
+    }
+    .img-expand{
+        width: 0;
+        height: 0;
+    }
+    .event1{
+        background-image: none;
+    }
+    .event2{
+        background-image: none;
+    }
+    .event3{
+        background-image: none;
+    }
+    .event4{
+        background-image: none;
+    }
+    .text-expand{
+        height: 100%;
+    }
+}
