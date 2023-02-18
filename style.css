@@ -2,7 +2,10 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
     box-sizing: border-box;
     margin: 0;
-    /*border: 1px solid black;*/
+    /* border: 1px solid black; */
+}
+body{
+    min-height: 100vh;
 }
 :root{
     --color1: #ff5378;
@@ -71,30 +74,20 @@
 }
 /* cards */
 .card{
-    height: 60%;
     border: 2px solid var(--color1);
     border-radius: 0; 
-    display: flex;
-    justify-content: space-around;
 }
-.card-img{
-    width: 230px;
-    height: 400px;
-    background-size: cover;
-    margin: 10px;
+.card-img {
+    height: 250px;
+    width: 100%;
     box-shadow: -6px -3px 5px 0px rgba(0,0,0,0.75);
 }
-.card-img.one{
-    background-image: url(./aseets/Museum_Tour.jpg);
+.imagenes{
+    height: 100%;
+    width: 100%;
 }
-.card-img.two{
-    background-image: url(./aseets/Cinema.jpg);
-}
-.card-img.three{
-    background-image: url(./aseets/Food_Fair.jpg);
-}
-.card-img.four{
-    background-image: url(./aseets/Costume_Party.jpg);
+.card-body{
+    padding: 5px;
 }
 .price-text{
     font-size: 12px;
@@ -113,7 +106,7 @@
 }
 .row-footercard{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 /* footer */
@@ -233,6 +226,16 @@ tr,td{
         text-align: center;
         width: 80%;
     }
+    .card-img {
+        height: 250px;
+        width: 100%;
+        box-shadow: -6px -3px 5px 0px rgba(0,0,0,0.75);
+    }
+    .imagenes{
+        height: 100%;
+        width: 100%;
+    }
+    
 }
 @media only screen and (max-width:767px){
     .container-fluid.slider{
@@ -267,16 +270,57 @@ tr,td{
     .event1{
         background-image: none;
     }
-    .event2{
-        background-image: none;
-    }
-    .event3{
-        background-image: none;
-    }
-    .event4{
-        background-image: none;
-    }
     .text-expand{
         height: 100%;
+    }
+    .card-img {
+        height: 250px;
+        width: 100%;
+        box-shadow: -6px -3px 5px 0px rgba(0,0,0,0.75);
+    }
+    .imagenes{
+        height: 100%;
+        width: 100%;
+    }
+    .container {
+        padding: 0;
+      }
+    
+      .card-columns {
+        column-count: 1;
+      }
+    
+      .card-deck {
+        display: block;
+      }
+    
+      .card {
+        margin-bottom: 20px;
+        max-width:300px;
+      }
+    
+}
+/* Estilos para pantallas medianas y grandes */
+@media (min-width: 768px) {
+    .container {
+      padding: 0 15px;
+    }
+  
+    .card-columns {
+      column-count: 2;
+    }
+  
+    .card-deck {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .card {
+      margin: 0 15px 30px;
+      flex: 1 0 0%;
+    }
+  
+    .card img {
+      height: 250px;
     }
 }
