@@ -1,4 +1,5 @@
-//Filtros de categorias//
+//Filtros de categorias
+//Se filtran y muestran en el HTML las categorias (no repetidas) de cada seccion: Home-Upcoming-Past
 function createCategory(category) {
     return `<div class="form-check">
               <label class="form-check-label">
@@ -25,7 +26,7 @@ function generatedCategory(arrayCategories) {
 
 }
 
-//Filtro Search//
+//Filtro Checkbox
 //Filtrar primero checkboxes y luego combinar con el input de search
 function addListenerToCheckboxes(arrayEvents) {
     let checkboxes = document.querySelectorAll('.form-check-input')
@@ -63,6 +64,7 @@ function addListenerToCheckboxes(arrayEvents) {
     })
 }
 
+//Filtro Search
 //Filtrar primero input Search y luego combinar con checkboxes
 function addListenerToInputSearch(arrayEvents) {    
     const inputSearch = document.getElementById('search');
