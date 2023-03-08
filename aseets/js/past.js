@@ -9,10 +9,12 @@ for (let event of data.events) {
 }
 }
 
+//Mostrar los checkboxes con las categorias de la seccion Past
 let arrayCategories = filterCategory(arrayEventsPast)
-
 generatedCategory(arrayCategories)
-
 document.getElementById('card').innerHTML = htmlPastEvents
 
-
+//Filtrar busquedas
+let checkboxes = document.querySelectorAll('.form-check-input')
+addListenerToCheckboxes(arrayEventsPast)
+addListenerToInputSearch(arrayEventsPast)

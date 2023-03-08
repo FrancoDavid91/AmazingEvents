@@ -9,9 +9,12 @@ for (let event of data.events) {
     } 
 }
 
+//Mostrar los checkboxes con las categorias de la seccion Upcoming
 let arrayCategories = filterCategory(arrayEventsUpcoming)
-
 generatedCategory(arrayCategories)
-
 document.getElementById('card').innerHTML = htmlUpcomingEvents
 
+//Filtrar busquedas
+let checkboxes = document.querySelectorAll('.form-check-input')
+addListenerToCheckboxes(arrayEventsUpcoming)
+addListenerToInputSearch(arrayEventsUpcoming)

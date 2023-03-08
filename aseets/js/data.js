@@ -180,10 +180,12 @@ function createCard(event){
             <div class="card-body">
               <h5 class="card-title text-center">${event.name}</h5>
               <p class="card-text text-center">${event.description}</p>
-              <div class="row-footercard">
+            </div>
+            <div class="row-footercard">
               <p class="price-text">Price $${event.price}</p>
               <a href="./details.html?id=${event.id}" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .3rem; --bs-btn-font-size: 1rem;">More...</a>
-              </div>
             </div>
-          </div>`
+            
+          </div>
+          `
 }
