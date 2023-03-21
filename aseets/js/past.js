@@ -1,3 +1,4 @@
+
 let htmlPastEvents = "";
 let arrayEventsPast = []
 for (let event of data.events) {

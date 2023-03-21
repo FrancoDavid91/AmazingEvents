@@ -2,7 +2,7 @@ const queryString = location.search
 
 const params = new URLSearchParams(queryString)
 const id = params.get("id")
-const evento = data.events.find(event => event.id == id)
+const evento = data.events.find(event => event._id == id)
 
 const cardDetails = document.querySelector(".card-details")
 cardDetails.innerHTML = `

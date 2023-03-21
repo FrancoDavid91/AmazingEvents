@@ -1,3 +1,4 @@
+
 let htmlUpcomingEvents = "";
 let arrayEventsUpcoming = []
 for (let event of data.events) {
